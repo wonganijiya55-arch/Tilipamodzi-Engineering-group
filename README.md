@@ -19,6 +19,7 @@ A clean, professional, responsive multi-page website for Tilipamodzi Engineering
 - `disclaimer.html` — Professional & Legal Disclaimer
 - `assets/css/styles.css` — Styles
 - `assets/js/main.js` — Minimal JS (menu toggle, footer year, form feedback)
+- `docs/` — GitHub Pages documentation site (minimal landing page)
 
 ## Preview Locally
 Use any static server. Here are quick options:
@@ -38,6 +39,19 @@ http-server -p 5500
 ### VS Code Extension (Live Server)
 Install "Live Server" and click "Go Live" in the status bar.
 
+## GitHub Pages
+This repository includes a `docs/` folder configured for GitHub Pages publishing from the `main` branch:
+- **Location**: `docs/` folder
+- **Content**: Minimal static landing page with links to the main website
+- **Setup**: No build process required - pure static HTML/CSS
+- **Access**: Once enabled in repository settings, the site will be available at: `https://[username].github.io/[repository-name]/`
+
+To enable GitHub Pages:
+1. Go to repository Settings → Pages
+2. Set Source to "Deploy from a branch"
+3. Select branch: `main` and folder: `/docs`
+4. Save and wait for deployment
+
 ## Logo Replacement
 The current logo uses a Font Awesome icon in the navbar and footer:
 - Look for `<span class="logo"><i class="fa-solid fa-hard-hat"></i></span>` in `index.html`.
@@ -45,11 +59,6 @@ The current logo uses a Font Awesome icon in the navbar and footer:
 
 ## Notes
 - Multi-page navigation replaces single-page anchors for better organization.
-- No exaggerated claims or fake awards.
-- Professional registrations are in progress; collaboration with qualified professionals emphasized.
-- For contact form submissions, connect to a backend (e.g., a serverless function or email service) when ready.
-
-## Notes
 - No exaggerated claims or fake awards.
 - Professional registrations are in progress; collaboration with qualified professionals emphasized.
 - For contact form submissions, connect to a backend (e.g., a serverless function or email service) when ready.
