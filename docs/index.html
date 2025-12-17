@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tilipamodzi Engineering Group - Documentation</title>
+  <meta name="description" content="Documentation and resources for Tilipamodzi Engineering Group - Building Reliable Engineering Solutions Together">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 
+    GitHub Pages Configuration Notes:
+    
+    This site is served from the docs/ folder on the main branch.
+    - All assets use relative paths for GitHub Pages compatibility
+    - .nojekyll file is included to bypass Jekyll processing
+    - No external build step required - pure static HTML/CSS
+    
+    To customize:
+    1. Edit this index.html for content changes
+    2. Modify style.css for visual customization
+    3. Add additional HTML files as needed
+    4. Ensure all links use relative paths (e.g., ./page.html or ../assets/file.css)
+    
+    GitHub Pages will automatically serve this site at:
+    https://[username].github.io/[repository-name]/
+  -->
+
+  <header>
+    <div class="container header-content">
+      <a href="./" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span>Tilipamodzi Engineering Group</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <h1>Tilipamodzi Engineering Group</h1>
+        <p>Building Reliable Engineering Solutions Together</p>
+        <a href="#about" class="btn">Learn More</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2>About Us</h2>
+        <p>
+          Tilipamodzi Engineering Group is a multidisciplinary engineering and construction company based in Malawi,
+          providing reliable, affordable, and sustainable solutions. We specialize in engineering design, construction
+          services, technical support, and digital solutions.
+        </p>
+        <p>
+          Our mission is to deliver professional engineering services that contribute to Malawi's infrastructure
+          development while maintaining the highest standards of quality, safety, and sustainability.
+        </p>
+      </div>
+    </section>
+
+    <!-- Quick Links Section -->
+    <section class="section">
+      <div class="container">
+        <h2>Quick Links</h2>
+        <div class="links-grid">
+          <a href="../index.html" class="link-card">
+            <h3>🏠 Main Website</h3>
+            <p>Visit our complete website with full details about our services, team, and projects.</p>
+          </a>
+          <a href="../about.html" class="link-card">
+            <h3>📖 About</h3>
+            <p>Learn more about our company, mission, vision, and core values.</p>
+          </a>
+          <a href="../services.html" class="link-card">
+            <h3>🔧 Services</h3>
+            <p>Explore our engineering, construction, and technical services.</p>
+          </a>
+          <a href="../projects.html" class="link-card">
+            <h3>🏗️ Projects</h3>
+            <p>View our ongoing and completed projects.</p>
+          </a>
+          <a href="../team.html" class="link-card">
+            <h3>👥 Team</h3>
+            <p>Meet our dedicated team of professionals.</p>
+          </a>
+          <a href="../contact.html" class="link-card">
+            <h3>📧 Contact</h3>
+            <p>Get in touch with us for inquiries and quotations.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Information Box -->
+    <section class="section">
+      <div class="container">
+        <div class="info-box">
+          <h3>🌐 GitHub Pages Deployment</h3>
+          <p>
+            This site is automatically published via GitHub Pages from the <code>docs/</code> folder on the main branch.
+            The site is fully static with no build process required. All content is self-contained and uses relative
+            paths to ensure compatibility with GitHub Pages hosting.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; <span id="year"></span> Tilipamodzi Engineering Group. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Set current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
