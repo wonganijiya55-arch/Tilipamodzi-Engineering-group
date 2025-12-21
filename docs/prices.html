@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Design Packages & Pricing</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        .pricing-section {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 1rem;
+        }
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+        @media (min-width: 700px) {
+            .pricing-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        .pricing-card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            padding: 2rem 1.5rem 1.5rem 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: box-shadow 0.2s;
+        }
+        .pricing-card:hover {
+            box-shadow: 0 4px 16px rgba(0,0,0,0.13);
+        }
+        .pricing-icon {
+            width: 60px;
+            height: 60px;
+            background: #e0e7ff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .pricing-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+        .pricing-desc {
+            font-size: 1rem;
+            color: #444;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        .pricing-price {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #2d6a4f;
+            margin-bottom: 0.5rem;
+        }
+        .note-section {
+            background: #f1f5f9;
+            border-left: 5px solid #2563eb;
+            border-radius: 8px;
+            margin-top: 2.5rem;
+            padding: 1.5rem 1.2rem;
+        }
+        .note-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #2563eb;
+            margin-bottom: 0.7rem;
+        }
+        .note-content {
+            font-size: 1rem;
+            color: #333;
+            white-space: pre-line;
+        }
+    </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html#main-content" class="brand" aria-label="Tilipamodzi Engineering Group home">
+        <span class="logo" aria-hidden="true"><i class="fa-solid fa-gear"></i></span>
+        <span class="brand-name">Tilipamodzi Engineering Group</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-navigation">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+      <ul class="nav-links" id="primary-navigation">
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="prices.html" aria-current="page">Prices</a></li>
+        <li><a href="why.html">Why Choose Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main-content" class="pricing-section">
+        <h1 style="text-align:center; margin-bottom:2rem;">Tilipamodzi Engineering Group – Web Design Pricing</h1>
+        <section class="pricing-grid new-pricing-grid">
+            <article class="pricing-card pricing-basic">
+                <div class="pricing-icon" aria-label="Basic Website Icon">🌐</div>
+                <div class="pricing-title">Basic Website (Static)</div>
+                <div class="pricing-desc"><strong>Best for:</strong> Small businesses, shops, NGOs, individuals</div>
+                <ul class="pricing-features">
+                    <li>1–3 pages (Home, About, Contact)</li>
+                    <li>Mobile-friendly design</li>
+                    <li>WhatsApp button</li>
+                    <li>SEO setup</li>
+                </ul>
+                <div class="pricing-details">
+                    <div><strong>Building:</strong> 80,000–150,000 MWK</div>
+                    <div><strong>Hosting:</strong> Free</div>
+                    <div><strong>Management:</strong> 5,000 MWK/month <span class="optional">(optional)</span></div>
+                    <div><strong>Domain setup:</strong> 22 USD/year <span class="optional">(optional)</span></div>
+                    <div><strong>Web email:</strong> Optional</div>
+                </div>
+                <div class="pricing-note">Ideal starter option for having your business online. Simple, easy to manage, perfect for small projects and NGOs.</div>
+            </article>
+            <article class="pricing-card pricing-standard">
+                <div class="pricing-icon" aria-label="Standard Website Icon">💼</div>
+                <div class="pricing-title">Standard Business Website</div>
+                <div class="pricing-desc"><strong>Best for:</strong> Growing companies, construction firms, services</div>
+                <ul class="pricing-features">
+                    <li>4–7 pages</li>
+                    <li>Contact form</li>
+                    <li>Social media links</li>
+                    <li>Google Maps</li>
+                </ul>
+                <div class="pricing-details">
+                    <div><strong>Building:</strong> 200,000–300,000 MWK</div>
+                    <div><strong>Hosting:</strong> Free</div>
+                    <div><strong>Management:</strong> 7,000 MWK/month <span class="optional">(optional)</span></div>
+                    <div><strong>Domain setup:</strong> 22 USD/year <span class="optional">(optional)</span></div>
+                    <div><strong>Web email:</strong> Optional</div>
+                </div>
+                <div class="pricing-note">Good for businesses that want more pages, branding, and client interaction without complexity.</div>
+            </article>
+            <article class="pricing-card pricing-advanced">
+                <div class="pricing-icon" aria-label="Advanced Website Icon">🛡️</div>
+                <div class="pricing-title">Advanced Website (Dynamic)</div>
+                <div class="pricing-desc"><strong>Best for:</strong> Institutions, systems, portals</div>
+                <ul class="pricing-features">
+                    <li>Login & registration</li>
+                    <li>Admin dashboard</li>
+                    <li>Interactive content</li>
+                    <li>Secure access</li>
+                </ul>
+                <div class="pricing-details">
+                    <div><strong>Building:</strong> 500,000–1,000,000 MWK</div>
+                    <div><strong>Hosting:</strong> 20 USD/month</div>
+                    <div><strong>Management:</strong> 20,000 MWK/month (full support)</div>
+                    <div><strong>Domain setup:</strong> 22 USD/year</div>
+                    <div><strong>Web email:</strong> Included</div>
+                </div>
+                <div class="pricing-note">Best for organizations needing full support and a professional online presence with interactive features.</div>
+            </article>
+        </section>
+        <style>
+            .new-pricing-grid {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            @media (min-width: 700px) {
+                .new-pricing-grid {
+                    grid-template-columns: repeat(3, 1fr);
+                }
+            }
+            .pricing-card {
+                background: #fff;
+                border-radius: 12px;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+                padding: 2rem 1.5rem 1.5rem 1.5rem;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                transition: box-shadow 0.2s;
+                border-top: 6px solid #2563eb;
+            }
+            .pricing-basic { border-top-color: #2d6a4f; }
+            .pricing-standard { border-top-color: #f59e42; }
+            .pricing-advanced { border-top-color: #d7263d; }
+            .pricing-icon {
+                width: 60px;
+                height: 60px;
+                background: #e0e7ff;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 2rem;
+                margin-bottom: 1rem;
+            }
+            .pricing-title {
+                font-size: 1.3rem;
+                font-weight: 600;
+                margin-bottom: 0.5rem;
+            }
+            .pricing-desc {
+                font-size: 1rem;
+                color: #444;
+                margin-bottom: 0.5rem;
+            }
+            .pricing-features {
+                margin: 0 0 0.7rem 0;
+                padding-left: 1.2rem;
+                font-size: 0.98rem;
+                color: #333;
+            }
+            .pricing-features li {
+                margin-bottom: 0.2rem;
+            }
+            .pricing-details {
+                font-size: 0.98rem;
+                margin-bottom: 0.7rem;
+                color: #2563eb;
+            }
+            .optional {
+                color: #888;
+                font-size: 0.95em;
+            }
+            .pricing-note {
+                background: #f1f5f9;
+                border-left: 4px solid #2563eb;
+                border-radius: 6px;
+                padding: 0.7rem 1rem;
+                font-size: 0.98rem;
+                color: #333;
+                margin-top: 0.5rem;
+            }
+        </style>
+    </main>
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <span class="logo" aria-hidden="true"><i class="fa-solid fa-gear"></i></span>
+        <span class="brand-name">Tilipamodzi Engineering Group</span>
+      </div>
+      <p class="footer-growth">Tilipamodzi Engineering Group is steadily growing with plans to expand into larger infrastructure and civil engineering projects.</p>
+      <p class="copyright">&copy; <span id="year"></span> Tilipamodzi Engineering Group. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+    </main>
+</body>
+</html>
